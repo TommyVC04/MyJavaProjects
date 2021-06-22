@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Blackjack {
 
 	public static void main (String [] args) {
-
+ 
 		Scanner input = new Scanner(System.in);
 
 		System.out.println( "\nWelcome to Blackjack! You start with 100 chips." );
