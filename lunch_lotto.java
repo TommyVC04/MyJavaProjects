@@ -16,6 +16,7 @@ public class lunch_lotto {
             i = input.nextInt();
         }
         assign(students);
+        // input.close();
     }
    
     public static void assign(ArrayList<Student> s) {
@@ -32,10 +33,10 @@ public class lunch_lotto {
             if (thisPer.size() > 0) {
                 System.out.println("Lunch Period " + p + ":");
                 for (int i = 1; i <= thisPer.get(thisPer.size()-1).getGrpNum(); i++) {
-                    System.out.println("Group " + i + ":");
+                    System.out.println("  Group " + i + ":");
                     for (int j = 0; j < thisPer.size(); j++) {
                         if (thisPer.get(j).getGrpNum() == i) {
-                            System.out.println(thisPer.get(j).getID());
+                            System.out.println("    " + thisPer.get(j).getID());
                         }
                     }
                 }
