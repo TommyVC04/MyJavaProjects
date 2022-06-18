@@ -142,6 +142,8 @@ public class Blackjack {
 		else if (chips - 100 < 0)
 			System.out.println( "You lost " + ((chips - 100) * -1) + " chips" );
 
+		input.close();
+
 	} //End of main
 
 

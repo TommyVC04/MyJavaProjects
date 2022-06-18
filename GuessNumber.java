@@ -152,6 +152,7 @@ public class GuessNumber
 		restart = input.nextInt();
 		}
 		
+		input.close();
 		}
 		
 		System.out.println();

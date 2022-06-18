@@ -16,7 +16,7 @@ public class lunch_lotto {
             i = input.nextInt();
         }
         assign(students);
-        // input.close();
+        input.close();
     }
    
     public static void assign(ArrayList<Student> s) {
