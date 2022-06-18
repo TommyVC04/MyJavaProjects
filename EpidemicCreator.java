@@ -125,6 +125,7 @@ public class EpidemicCreator
 		}
 		//while restart end
 
+		input.close();
 		System.out.println( "\nThank you for using the Epidemic " +
 		"Creator!" );
 
