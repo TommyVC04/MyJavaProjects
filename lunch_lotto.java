@@ -3,8 +3,26 @@ import java.util.*;
 public class lunch_lotto {
    
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Lottery l =  new Lottery();
+        l.start();
+    }
+   
+}
+
+class Lottery {
+
+    public Lottery () {
+        //
+    }
+
+    public void start() {
+        ArrayList<Student> students = getStudents();
+        assign(students);
+    }
+
+    private ArrayList<Student> getStudents() {
         ArrayList<Student> students = new ArrayList<Student>();
+        Scanner input = new Scanner(System.in);
         int i = 1;
         while (i == 1) {
             System.out.print("\nEnter your student ID: ");
@@ -15,11 +33,11 @@ public class lunch_lotto {
             System.out.print("Do you want to add another student? (Yes -> 1, No -> 0): ");
             i = input.nextInt();
         }
-        assign(students);
         input.close();
+        return students;
     }
-   
-    public static void assign(ArrayList<Student> s) {
+
+    private void assign(ArrayList<Student> s) {
         for (int p = 1; p <= maxPer(s); p++) {
             ArrayList<Student> thisPer = new ArrayList<Student>();
             for (int i = 0; i < s.size(); i++) {
@@ -44,7 +62,7 @@ public class lunch_lotto {
         }
     }
    
-    public static int maxPer(ArrayList<Student> s) {
+    private int maxPer(ArrayList<Student> s) {
         int maxP = 0;
         for (int i = 0; i < s.size(); i++) {
             if (s.get(i).getPer() > maxP)
@@ -52,6 +70,7 @@ public class lunch_lotto {
         }
         return maxP;
     }
+
 }
 
 class Student {
