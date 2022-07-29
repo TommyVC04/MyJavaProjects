@@ -3,6 +3,8 @@
 
 <head>
   <title>The Lunch Lottery</title>
+
+  <script src = "helper.js"></script>
 </head>
 
 <body>
@@ -35,9 +37,10 @@
       <input type = "text" id = "lname" name = "lname"><br>
       <label for = "stuid">Student ID:</label><br>
       <input type = "number" id = "fname" name = "fname"><br>
-      <input type = "submit" value = "Submit"><br>
+      <input type = "submit" value = "Submit" onclick = printStudent()><br>
     </form>
     <h3>Groups</h3>
+    <p id = "student"></p>
 </body>
 
 </html>
