@@ -1,0 +1,15 @@
+* {
+    font-family: 'Times New Roman', 'serif';
+}
+
+.mainHeader {
+    text-align: center;
+    font-size: 3em;
+    background-color: rgb(23, 136, 228);
+    padding-bottom: 120px;
+}
+
+
+.footer-format {
+    font-size: 5em;
+}
