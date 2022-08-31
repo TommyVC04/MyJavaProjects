@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D81190E628BFA65300EB3308 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81190E528BFA65300EB3308 /* CircleImage.swift */; };
+		D81190E828BFA7BB00EB3308 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81190E728BFA7BB00EB3308 /* MapView.swift */; };
+		D81190EA28BFAC6600EB3308 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81190E928BFAC6600EB3308 /* Landmark.swift */; };
+		D81190EE28BFAE6F00EB3308 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81190ED28BFAE6F00EB3308 /* ModelData.swift */; };
+		D81190F228BFB07F00EB3308 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81190F128BFB07F00EB3308 /* LandmarkRow.swift */; };
 		D87C95F028BD033B00DBD976 /* Lunch_LotteryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C95EF28BD033B00DBD976 /* Lunch_LotteryApp.swift */; };
 		D87C95F228BD033B00DBD976 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C95F128BD033B00DBD976 /* ContentView.swift */; };
 		D87C95F428BD033D00DBD976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87C95F328BD033D00DBD976 /* Assets.xcassets */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D81190E528BFA65300EB3308 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		D81190E728BFA7BB00EB3308 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D81190E928BFAC6600EB3308 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		D81190ED28BFAE6F00EB3308 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		D81190F128BFB07F00EB3308 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		D87C95EC28BD033B00DBD976 /* Lunch Lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lunch Lottery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87C95EF28BD033B00DBD976 /* Lunch_LotteryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lunch_LotteryApp.swift; sourceTree = "<group>"; };
 		D87C95F128BD033B00DBD976 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +81,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D81190EF28BFAFAD00EB3308 /* Modeling */ = {
+			isa = PBXGroup;
+			children = (
+				D81190E928BFAC6600EB3308 /* Landmark.swift */,
+				D81190ED28BFAE6F00EB3308 /* ModelData.swift */,
+			);
+			path = Modeling;
+			sourceTree = "<group>";
+		};
+		D81190F028BFAFD000EB3308 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D87C95F128BD033B00DBD976 /* ContentView.swift */,
+				D81190E528BFA65300EB3308 /* CircleImage.swift */,
+				D81190E728BFA7BB00EB3308 /* MapView.swift */,
+				D81190F128BFB07F00EB3308 /* LandmarkRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D87C95E328BD033A00DBD976 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				D87C95EF28BD033B00DBD976 /* Lunch_LotteryApp.swift */,
-				D87C95F128BD033B00DBD976 /* ContentView.swift */,
 				D87C95F328BD033D00DBD976 /* Assets.xcassets */,
+				D81190EF28BFAFAD00EB3308 /* Modeling */,
+				D81190F028BFAFD000EB3308 /* Views */,
 				D87C95F528BD033D00DBD976 /* Preview Content */,
 			);
 			path = "Lunch Lottery";
@@ -258,7 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D87C95F228BD033B00DBD976 /* ContentView.swift in Sources */,
+				D81190E828BFA7BB00EB3308 /* MapView.swift in Sources */,
 				D87C95F028BD033B00DBD976 /* Lunch_LotteryApp.swift in Sources */,
+				D81190E628BFA65300EB3308 /* CircleImage.swift in Sources */,
+				D81190EA28BFAC6600EB3308 /* Landmark.swift in Sources */,
+				D81190F228BFB07F00EB3308 /* LandmarkRow.swift in Sources */,
+				D81190EE28BFAE6F00EB3308 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

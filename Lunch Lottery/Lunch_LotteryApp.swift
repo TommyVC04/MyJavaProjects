@@ -2,7 +2,7 @@
 //  Lunch_LotteryApp.swift
 //  Lunch Lottery
 //
-//  Created by 2390004 on 8/29/22.
+//  Created by TommyVC04 on 8/29/22.
 //
 
 import SwiftUI
