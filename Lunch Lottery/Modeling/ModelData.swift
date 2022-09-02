@@ -8,7 +8,7 @@
 import SwiftUI
 import Foundation
 
-var landmarks: [Landmark] = load("landmark.json")
+var landmarks: [Landmark] = load("landmarkData")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
