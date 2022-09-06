@@ -21,6 +21,7 @@
 		D87C960128BD033E00DBD976 /* Lunch_LotteryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C960028BD033E00DBD976 /* Lunch_LotteryTests.swift */; };
 		D87C960B28BD033E00DBD976 /* Lunch_LotteryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C960A28BD033E00DBD976 /* Lunch_LotteryUITests.swift */; };
 		D87C960D28BD033E00DBD976 /* Lunch_LotteryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C960C28BD033E00DBD976 /* Lunch_LotteryUITestsLaunchTests.swift */; };
+		D8D4B10028C790A90063E762 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = D8D4B0FF28C790A80063E762 /* landmarkData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		D87C960628BD033E00DBD976 /* Lunch LotteryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lunch LotteryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87C960A28BD033E00DBD976 /* Lunch_LotteryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lunch_LotteryUITests.swift; sourceTree = "<group>"; };
 		D87C960C28BD033E00DBD976 /* Lunch_LotteryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lunch_LotteryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D8D4B0FF28C790A80063E762 /* landmarkData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,10 +132,11 @@
 		D87C95EE28BD033B00DBD976 /* Lunch Lottery */ = {
 			isa = PBXGroup;
 			children = (
-				D87C95EF28BD033B00DBD976 /* Lunch_LotteryApp.swift */,
 				D87C95F328BD033D00DBD976 /* Assets.xcassets */,
+				D87C95EF28BD033B00DBD976 /* Lunch_LotteryApp.swift */,
 				D81190EF28BFAFAD00EB3308 /* Modeling */,
 				D81190F028BFAFD000EB3308 /* Views */,
+				D8D4B10128C790C00063E762 /* Resources */,
 				D87C95F528BD033D00DBD976 /* Preview Content */,
 			);
 			path = "Lunch Lottery";
@@ -162,6 +165,14 @@
 				D87C960C28BD033E00DBD976 /* Lunch_LotteryUITestsLaunchTests.swift */,
 			);
 			path = "Lunch LotteryUITests";
+			sourceTree = "<group>";
+		};
+		D8D4B10128C790C00063E762 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8D4B0FF28C790A80063E762 /* landmarkData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 			files = (
 				D87C95F728BD033D00DBD976 /* Preview Assets.xcassets in Resources */,
 				D87C95F428BD033D00DBD976 /* Assets.xcassets in Resources */,
+				D8D4B10028C790A90063E762 /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,17 +5,16 @@
 //  Created by TommyVC04 on 8/31/22.
 //
 
-import SwiftUI
 import Foundation
 
-var landmarks: [Landmark] = load("landmarkData")
+var landmarks: [Landmark] = load("landmarkData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
 
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
-    else {
-        fatalError("Couldn't find \(filename) in main bundle.")
+        else {
+            fatalError("Couldn't find \(filename) in main bundle.")
     }
 
     do {
