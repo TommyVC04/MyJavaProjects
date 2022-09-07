@@ -15,18 +15,20 @@ struct Landmark: Hashable, Codable, Identifiable {
     var park: String
     var state: String
     var description: String
-    
-    private var ImageName: String
+    var isFavorite: Bool
+
+    private var imageName: String
     var image: Image {
-        Image(ImageName)
+        Image(imageName)
     }
-    
+
     private var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
             latitude: coordinates.latitude,
             longitude: coordinates.longitude)
     }
+
     struct Coordinates: Hashable, Codable {
         var latitude: Double
         var longitude: Double
