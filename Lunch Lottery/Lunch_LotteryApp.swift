@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct Lunch_LotteryApp: App {
-    @State private var modelData = ModelData()
+    @StateObject private var modelData = ModelData()
     var body: some Scene {
         WindowGroup {
             ContentView()
