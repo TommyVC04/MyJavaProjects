@@ -42,6 +42,8 @@
 		D87C960128BD033E00DBD976 /* Lunch_LotteryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C960028BD033E00DBD976 /* Lunch_LotteryTests.swift */; };
 		D87C960B28BD033E00DBD976 /* Lunch_LotteryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C960A28BD033E00DBD976 /* Lunch_LotteryUITests.swift */; };
 		D87C960D28BD033E00DBD976 /* Lunch_LotteryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C960C28BD033E00DBD976 /* Lunch_LotteryUITestsLaunchTests.swift */; };
+		D8D9CD6C28D4BD8200740645 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D9CD6B28D4BD8200740645 /* PageViewController.swift */; };
+		D8D9CD6E28D4BF5A00740645 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D9CD6D28D4BF5A00740645 /* FeatureCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		D87C960628BD033E00DBD976 /* Lunch LotteryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lunch LotteryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87C960A28BD033E00DBD976 /* Lunch_LotteryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lunch_LotteryUITests.swift; sourceTree = "<group>"; };
 		D87C960C28BD033E00DBD976 /* Lunch_LotteryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lunch_LotteryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D8D9CD6B28D4BD8200740645 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		D8D9CD6D28D4BF5A00740645 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				D81030A828D2228A0004983E /* ProfileHost.swift */,
+				D8D9CD6B28D4BD8200740645 /* PageViewController.swift */,
+				D8D9CD6D28D4BF5A00740645 /* FeatureCard.swift */,
 				D81030AF28D227A70004983E /* ProfileEditor.swift */,
 				D81030AB28D2230C0004983E /* ProfileSummary.swift */,
 			);
@@ -419,6 +425,7 @@
 				D81030A728D221C00004983E /* Profile.swift in Sources */,
 				D864DE4228D0CA26002A06DE /* GraphCapsule.swift in Sources */,
 				D864DE4728D0CF87002A06DE /* CategoryHome.swift in Sources */,
+				D8D9CD6E28D4BF5A00740645 /* FeatureCard.swift in Sources */,
 				D87C95F228BD033B00DBD976 /* ContentView.swift in Sources */,
 				D87886E128CF7CCA00044F5A /* Badge.swift in Sources */,
 				D81190E828BFA7BB00EB3308 /* MapView.swift in Sources */,
@@ -437,6 +444,7 @@
 				D84582D028C24752009805D1 /* LandmarkList.swift in Sources */,
 				D864DE3E28D0CA1D002A06DE /* HikeDetail.swift in Sources */,
 				D84582D228C24891009805D1 /* LandmarkDetail.swift in Sources */,
+				D8D9CD6C28D4BD8200740645 /* PageViewController.swift in Sources */,
 				D87886DB28CF76C700044F5A /* BadgeBackground.swift in Sources */,
 				D81030AE28D223990004983E /* HikeBadge.swift in Sources */,
 				D81190E628BFA65300EB3308 /* CircleImage.swift in Sources */,
