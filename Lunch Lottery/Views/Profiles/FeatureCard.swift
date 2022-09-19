@@ -2,7 +2,7 @@
 //  FeatureCard.swift
 //  Lunch Lottery
 //
-//  Created by 2390004 on 9/16/22.
+//  Created by TommyVC04 on 9/16/22.
 //
 
 import SwiftUI

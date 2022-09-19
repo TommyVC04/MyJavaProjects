@@ -2,7 +2,7 @@
 //  Badge.swift
 //  Lunch Lottery
 //
-//  Created by 2390004 on 9/12/22.
+//  Created by TommyVC04 on 9/12/22.
 //
 
 import SwiftUI
