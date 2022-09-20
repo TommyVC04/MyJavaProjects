@@ -138,11 +138,13 @@
 		D81030AA28D222A00004983E /* Profiles */ = {
 			isa = PBXGroup;
 			children = (
-				D8DF303F28D8B8E80042BE65 /* Pages */,
-				D81030A828D2228A0004983E /* ProfileHost.swift */,
-				D8D9CD6D28D4BF5A00740645 /* FeatureCard.swift */,
-				D81030AF28D227A70004983E /* ProfileEditor.swift */,
+				D8D9CD6B28D4BD8200740645 /* PageViewController.swift */,
+				D8DF303B28D8B0FF0042BE65 /* PageView.swift */,
+				D8DF303D28D8B66E0042BE65 /* PageControl.swift */,
 				D81030AB28D2230C0004983E /* ProfileSummary.swift */,
+				D81030AF28D227A70004983E /* ProfileEditor.swift */,
+				D8D9CD6D28D4BF5A00740645 /* FeatureCard.swift */,
+				D81030A828D2228A0004983E /* ProfileHost.swift */,
 			);
 			path = Profiles;
 			sourceTree = "<group>";
@@ -291,16 +293,6 @@
 				D8385A3528C8DCF9002866AF /* landmarkData.json */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		D8DF303F28D8B8E80042BE65 /* Pages */ = {
-			isa = PBXGroup;
-			children = (
-				D8DF303D28D8B66E0042BE65 /* PageControl.swift */,
-				D8DF303B28D8B0FF0042BE65 /* PageView.swift */,
-				D8D9CD6B28D4BD8200740645 /* PageViewController.swift */,
-			);
-			path = Pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -1,9 +1,9 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-A view displaying information about a hike, including an elevation graph.
-*/
+//
+//  HikeView.swift
+//  Lunch Lottery
+//
+//  Created by TommyVC04 on 9/14/22.
+//
 
 import SwiftUI
 

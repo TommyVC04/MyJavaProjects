@@ -1,9 +1,9 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-The elevation, heart rate, and pace of a hike plotted on a graph.
-*/
+//
+//  HikeGraph.swift
+//  Lunch Lottery
+//
+//  Created by TommyVC04 on 9/14/22.
+//
 
 import SwiftUI
 

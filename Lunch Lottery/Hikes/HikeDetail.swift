@@ -1,9 +1,9 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-A view showing the details for a hike.
-*/
+//
+//  HikeDetail.swift
+//  Lunch Lottery
+//
+//  Created by TommyVC04 on 9/14/22.
+//
 
 import SwiftUI
 
