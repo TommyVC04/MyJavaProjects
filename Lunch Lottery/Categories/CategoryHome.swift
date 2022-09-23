@@ -24,7 +24,7 @@ struct CategoryHome: View {
                 .listRowInsets(EdgeInsets())
             }
             .listStyle(.inset)
-            .navigationTitle("Featured")
+            .navigationTitle("Lunch Lotteries")
             .toolbar {
                 Button {
                     showingProfile.toggle()

@@ -19,7 +19,7 @@ struct ProfileEditor: View {
     var body: some View {
         List {
             HStack {
-                Text("Username").bold()
+                Text("Name").bold()
                 Divider()
                 TextField("Username", text: $profile.username)
             }
@@ -29,17 +29,14 @@ struct ProfileEditor: View {
             }
             
             VStack(alignment: .leading, spacing: 20) {
-                Text("Seasonal Photo").bold()
+                Text("School / Organization").bold()
                             
-                Picker("Seasonal Photo", selection: $profile.seasonalPhoto) {
-                    ForEach(Profile.Season.allCases) { season in
-                        Text(season.rawValue).tag(season)
+                Picker("School / Organization", selection: $profile.school) {
+                    ForEach(Profile.School.allCases) { school in
+                        Text(school.rawValue).tag(school)
                     }
                 }
-                .pickerStyle(.segmented)
-            }
-            DatePicker(selection: $profile.goalDate, in: dateRange, displayedComponents: .date) {
-                Text("Goal Date").bold()
+                .pickerStyle(.wheel)
             }
         }
     }
