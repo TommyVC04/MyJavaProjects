@@ -14,42 +14,35 @@ struct LandmarkList: View {
     
     var body: some View {
         NavigationView {
-            if (profile.school.rawValue == "Choose a School / Organizaiton") {
-                Text("Edit Profile to Join an Organization")
-                    .navigationTitle("Lunch Lotteries")
-                    .toolbar {
-                        Button {
-                            showingProfile.toggle()
-                        } label: {
-                            Label("User Profile", systemImage: "person.crop.circle")
-                        }
-                    }
-                    .sheet(isPresented: $showingProfile) {
-                        ProfileHost()
-                            .environmentObject(modelData)
-                    }
-            }
-            else {
-                List {                  ForEach(modelData.landmarks) { landmark in
-                        NavigationLink {
-                            LandmarkDetail(landmark: landmark)
-                        } label: {
-                            LandmarkRow(landmark: landmark)
-                        }
-                    }
-                }
-                .navigationTitle("Lunch Lotteries")
-                .toolbar {
-                    Button {
-                        showingProfile.toggle()
+            List {
+                
+                if (profile.school.rawValue != "Choose a School / Organizaiton") {
+                
+                ForEach(modelData.landmarks) { landmark in
+                    NavigationLink {
+                        LandmarkDetail(landmark: landmark)
                     } label: {
-                        Label("User Profile", systemImage: "person.crop.circle")
+                        LandmarkRow(landmark: landmark)
                     }
                 }
-                .sheet(isPresented: $showingProfile) {
-                    ProfileHost()
-                        .environmentObject(modelData)
+                
                 }
+                else {
+                    Text("Edit Profile to Select School")
+                }
+                
+            }
+            .navigationTitle("Lunch Lotteries")
+            .toolbar {
+                Button {
+                    showingProfile.toggle()
+                } label: {
+                    Label("User Profile", systemImage: "person.crop.circle")
+                }
+            }
+            .sheet(isPresented: $showingProfile) {
+                ProfileHost()
+                    .environmentObject(modelData)
             }
         }
     }
