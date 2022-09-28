@@ -1,13 +1,13 @@
 //
-//  FavoriteButton.swift
+//  CancelButton.swift
 //  Lunch Lottery
 //
-//  Created by TommyVC04 on 9/7/22.
+//  Created by TommyVC04 on 9/28/22.
 //
 
 import SwiftUI
 
-struct FavoriteButton: View {
+struct CancelButton: View {
     @State private var isSet = false
 
     var body: some View {
@@ -19,14 +19,14 @@ struct FavoriteButton: View {
         .background(Color.blue)
         .clipShape(RoundedRectangle(cornerRadius: 5))
         .confirmationDialog("Are you sure?", isPresented: $isSet, titleVisibility: .visible) {
-            Button("Yes", role: .destructive, CancelButton() -> Void)
+            Button("Yes", role: .destructive, action: FavoriteButton())
             Button("Cancel", role: .cancel) {}
         }
     }
 }
 
-struct FavoriteButton_Previews: PreviewProvider {
+struct CancelButton_Previews: PreviewProvider {
     static var previews: some View {
-        FavoriteButton()
+        CancelButton()
     }
 }

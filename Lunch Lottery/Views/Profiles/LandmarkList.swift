@@ -13,11 +13,46 @@ struct LandmarkList: View {
     var profile: Profile
     
     var body: some View {
+        let chosenOrg = modelData.profile.school.rawValue != "Choose a School / Organization"
+        NavigationView {
+            if (chosenOrg) {
+                schoolView
+            }
+            else {
+                noOrgView
+            }
+        }
+    }
+    
+    var noOrgView: some View {
         NavigationView {
             List {
-                
-                if (profile.school.rawValue != "Choose a School / Organizaiton") {
-                
+                Text("Edit Profile to Select School")
+            }
+            .navigationTitle("Lunch Lotteries")
+            .toolbar {
+                Button {
+                    showingProfile.toggle()
+                } label: {
+                    Label("User Profile", systemImage: "person.crop.circle")
+                }
+            }
+            .sheet(isPresented: $showingProfile) {
+                ProfileHost()
+                    .environmentObject(modelData)
+            }
+            
+        }
+    }
+    /*
+    func checkSchool () {
+        chosenOrg = modelData.profile.school.rawValue != "Choose a School / Organization"
+    }
+     */
+    
+    var schoolView: some View {
+        NavigationView {
+            List {
                 ForEach(modelData.landmarks) { landmark in
                     NavigationLink {
                         LandmarkDetail(landmark: landmark)
@@ -25,12 +60,6 @@ struct LandmarkList: View {
                         LandmarkRow(landmark: landmark)
                     }
                 }
-                
-                }
-                else {
-                    Text("Edit Profile to Select School")
-                }
-                
             }
             .navigationTitle("Lunch Lotteries")
             .toolbar {
@@ -46,6 +75,7 @@ struct LandmarkList: View {
             }
         }
     }
+    
 }
 
 struct LandmarkList_Previews: PreviewProvider {
