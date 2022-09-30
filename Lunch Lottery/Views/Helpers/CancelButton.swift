@@ -19,7 +19,9 @@ struct CancelButton: View {
         .background(Color.blue)
         .clipShape(RoundedRectangle(cornerRadius: 5))
         .confirmationDialog("Are you sure?", isPresented: $isSet, titleVisibility: .visible) {
-            Button("Yes", role: .destructive, action: FavoriteButton())
+            Button("Yes", role: .destructive) {
+                FavoriteButton()
+            }
             Button("Cancel", role: .cancel) {}
         }
     }

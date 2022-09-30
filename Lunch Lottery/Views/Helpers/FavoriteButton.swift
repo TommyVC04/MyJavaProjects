@@ -19,10 +19,16 @@ struct FavoriteButton: View {
         .background(Color.blue)
         .clipShape(RoundedRectangle(cornerRadius: 5))
         .confirmationDialog("Are you sure?", isPresented: $isSet, titleVisibility: .visible) {
-            Button("Yes", role: .destructive, CancelButton() -> Void)
+            Button("Yes", role: .destructive) {
+                replaceAndConfirm()
+            }
             Button("Cancel", role: .cancel) {}
         }
     }
+}
+
+func replaceAndConfirm() {
+    //ENTER LOTTERY
 }
 
 struct FavoriteButton_Previews: PreviewProvider {
