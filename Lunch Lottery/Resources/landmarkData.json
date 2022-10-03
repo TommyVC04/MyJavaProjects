@@ -1,7 +1,7 @@
 [
     {
         "name": "A Lunch",
-        "category": "Rivers",
+        "category": "Lake Forest High School",
         "city": "Twentynine Palms",
         "state": "Lake Forest High School",
         "id": 1001,
@@ -18,7 +18,7 @@
     },
     {
         "name": "B Lunch",
-        "category": "Lakes",
+        "category": "Lake Forest High School",
         "city": "Port Alsworth",
         "state": "Lake Forest High School",
         "id": 1002,
@@ -35,7 +35,7 @@
     },
     {
         "name": "C Lunch",
-        "category": "Mountains",
+        "category": "Lake Forest High School",
         "city": "Skagway",
         "state": "Lake Forest High School",
         "id": 1003,
@@ -49,5 +49,39 @@
         },
         "description": "DELETE THIS LATER",
         "imageName": "chilkoottrail"
+    }
+    {
+        "name": "1st DPM Lunch",
+        "category": "Deerpath Middle School",
+        "city": "Skagway",
+        "state": "Deerpath Middle School",
+        "id": 1003,
+        "time": 1145,
+        "isFeatured": false,
+        "isFavorite": true,
+        "park": "Slot 11-12",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "description": "DELETE THIS LATER",
+        "imageName": "rainbowlake"
+    }
+    {
+        "name": "LB 1P Lunch",
+        "category": "Lake Bluff Elementary School",
+        "city": "Skagway",
+        "state": "Lake Bluff Elementary School",
+        "id": 1003,
+        "time": 1145,
+        "isFeatured": false,
+        "isFavorite": true,
+        "park": "Slot 11-12",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "description": "DELETE THIS LATER",
+        "imageName": "icybay"
     }
 ]
