@@ -53,13 +53,15 @@ struct LandmarkList: View {
     var schoolView: some View {
         NavigationView {
             List {
-                ForEach(modelData.landmarks) { landmark in
-                    NavigationLink {
-                        LandmarkDetail(landmark: landmark)
-                    } label: {
-                        LandmarkRow(landmark: landmark)
+                if true {
+                    ForEach(modelData.landmarks) { landmark in
+                        NavigationLink {
+                            LandmarkDetail(landmark: landmark)
+                        } label: {
+                            LandmarkRow(landmark: landmark)
+                        }
                     }
-                }
+                } // end if
             }
             .navigationTitle("Lunch Lotteries")
             .toolbar {

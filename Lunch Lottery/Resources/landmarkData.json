@@ -20,7 +20,7 @@
         "name": "B Lunch",
         "category": "Lake Forest High School",
         "city": "Port Alsworth",
-        "state": "Lake Forest High School",
+        "state": "lfhs",
         "id": 1002,
         "time": 1115,
         "isFeatured": false,
@@ -49,13 +49,13 @@
         },
         "description": "DELETE THIS LATER",
         "imageName": "chilkoottrail"
-    }
+    },
     {
         "name": "1st DPM Lunch",
         "category": "Deerpath Middle School",
         "city": "Skagway",
         "state": "Deerpath Middle School",
-        "id": 1003,
+        "id": 1004,
         "time": 1145,
         "isFeatured": false,
         "isFavorite": true,
@@ -66,13 +66,13 @@
         },
         "description": "DELETE THIS LATER",
         "imageName": "rainbowlake"
-    }
+    },
     {
         "name": "LB 1P Lunch",
         "category": "Lake Bluff Elementary School",
         "city": "Skagway",
         "state": "Lake Bluff Elementary School",
-        "id": 1003,
+        "id": 1005,
         "time": 1145,
         "isFeatured": false,
         "isFavorite": true,
