@@ -16,7 +16,7 @@ struct Profile {
     static let `default` = Profile(username: "")
 
     enum School: String, CaseIterable, Identifiable {
-        case none = "Choose a School / Organizaiton"
+        case none = "Choose a School / Organization"
         case lakeForestHighSchool = "Lake Forest High School"
         case deerpathMiddleSchool = "Deerpath Middle School"
         case lakeBluffElementary = "Lake Bluff Elementary School"

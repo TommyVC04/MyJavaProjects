@@ -20,6 +20,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     
     var category: Category
     enum Category: String, CaseIterable, Codable {
+        case test = "Test"
         case lfhs = "Lake Forest High School"
         case dpm = "Deerpath Middle School"
         case lbes = "Lake Bluff Elementary School"

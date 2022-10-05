@@ -19,7 +19,7 @@ struct ProfileSummary: View {
                     .font(.title)
 
                 Text("Notifications: \(profile.prefersNotifications ? "On": "Off" )")
-                Text("School / Organization: \(profile.school.rawValue == "Choose a School / Organizaiton" ? "~": profile.school.rawValue)")
+                Text("School / Organization: \(profile.school.rawValue == "Choose a School / Organization" ? "~": profile.school.rawValue)")
                 
                 Divider()
                 

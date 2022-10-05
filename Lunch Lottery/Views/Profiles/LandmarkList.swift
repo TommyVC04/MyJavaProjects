@@ -48,20 +48,23 @@ struct LandmarkList: View {
     func checkSchool () {
         chosenOrg = modelData.profile.school.rawValue != "Choose a School / Organization"
     }
+     
+     ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
+         CategoryRow(categoryName: key, items: modelData.categories[key]!)
+     }
      */
     
     var schoolView: some View {
         NavigationView {
             List {
-                if true {
-                    ForEach(modelData.landmarks) { landmark in
-                        NavigationLink {
-                            LandmarkDetail(landmark: landmark)
-                        } label: {
-                            LandmarkRow(landmark: landmark)
-                        }
+                //let strKey = 
+                ForEach((modelData.categories[profile.school.rawValue] ?? modelData.categories["Test"])!) { landmark in
+                    NavigationLink {
+                        LandmarkDetail(landmark: landmark)
+                    } label: {
+                        LandmarkRow(landmark: landmark)
                     }
-                } // end if
+                }
             }
             .navigationTitle("Lunch Lotteries")
             .toolbar {
