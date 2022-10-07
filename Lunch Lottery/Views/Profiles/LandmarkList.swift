@@ -57,8 +57,8 @@ struct LandmarkList: View {
     var schoolView: some View {
         NavigationView {
             List {
-                //let strKey = 
-                ForEach((modelData.categories[profile.school.rawValue] ?? modelData.categories["Test"])!) { landmark in
+                let strKey = modelData.profile.school.rawValue
+                ForEach((modelData.categories[strKey] ?? modelData.categories["Test"])!) { landmark in
                     NavigationLink {
                         LandmarkDetail(landmark: landmark)
                     } label: {
