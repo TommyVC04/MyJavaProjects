@@ -14,7 +14,7 @@
             "latitude": 34.011286
         },
         "description": "DELETE THIS LATER",
-        "imageName": "umbagog"
+        "imageName": "turtlerock"
     },
     {
         "name": "A Lunch",
@@ -31,7 +31,7 @@
             "latitude": 34.011286
         },
         "description": "DELETE THIS LATER",
-        "imageName": "turtlerock"
+        "imageName": "lfhsImage"
     },
     {
         "name": "B Lunch",
@@ -48,7 +48,7 @@
             "latitude": 59.980167
         },
         "description": "DELETE THIS LATER",
-        "imageName": "silversalmoncreek"
+        "imageName": "lfhsImage"
     },
     {
         "name": "C Lunch",
@@ -65,7 +65,7 @@
             "latitude": 59.560551
         },
         "description": "DELETE THIS LATER",
-        "imageName": "chilkoottrail"
+        "imageName": "lfhsImage"
     },
     {
         "name": "1st DPM Lunch",
@@ -82,7 +82,7 @@
             "latitude": 59.560551
         },
         "description": "DELETE THIS LATER",
-        "imageName": "rainbowlake"
+        "imageName": "dpmImage"
     },
     {
         "name": "LB 1P Lunch",
@@ -99,6 +99,6 @@
             "latitude": 59.560551
         },
         "description": "DELETE THIS LATER",
-        "imageName": "icybay"
+        "imageName": "lbesImage"
     }
 ]
