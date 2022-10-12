@@ -29,6 +29,7 @@
 		D864DE4028D0CA22002A06DE /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D864DE3F28D0CA22002A06DE /* HikeGraph.swift */; };
 		D864DE4228D0CA26002A06DE /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D864DE4128D0CA26002A06DE /* GraphCapsule.swift */; };
 		D864DE4728D0CF87002A06DE /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D864DE4628D0CF87002A06DE /* CategoryHome.swift */; };
+		D869D73D28F7085A009B28F1 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869D73C28F7085A009B28F1 /* ScheduleView.swift */; };
 		D87C95F028BD033B00DBD976 /* Lunch_LotteryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C95EF28BD033B00DBD976 /* Lunch_LotteryApp.swift */; };
 		D87C95F228BD033B00DBD976 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C95F128BD033B00DBD976 /* ContentView.swift */; };
 		D87C95F428BD033D00DBD976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87C95F328BD033D00DBD976 /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 		D864DE3F28D0CA22002A06DE /* HikeGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
 		D864DE4128D0CA26002A06DE /* GraphCapsule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCapsule.swift; sourceTree = "<group>"; };
 		D864DE4628D0CF87002A06DE /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
+		D869D73C28F7085A009B28F1 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		D87C95EC28BD033B00DBD976 /* Lunch Lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lunch Lottery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87C95EF28BD033B00DBD976 /* Lunch_LotteryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lunch_LotteryApp.swift; sourceTree = "<group>"; };
 		D87C95F128BD033B00DBD976 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -128,8 +130,8 @@
 		D81030AA28D222A00004983E /* Profiles */ = {
 			isa = PBXGroup;
 			children = (
-				D81030A428D21ADA0004983E /* CategoryItem.swift */,
 				D81030A228D219450004983E /* CategoryRow.swift */,
+				D81030A428D21ADA0004983E /* CategoryItem.swift */,
 				D864DE4628D0CF87002A06DE /* CategoryHome.swift */,
 				D81190F128BFB07F00EB3308 /* LandmarkRow.swift */,
 				D84582D128C24891009805D1 /* LandmarkDetail.swift */,
@@ -138,6 +140,7 @@
 				D8DF303B28D8B0FF0042BE65 /* PageView.swift */,
 				D8DF303D28D8B66E0042BE65 /* PageControl.swift */,
 				D81030AB28D2230C0004983E /* ProfileSummary.swift */,
+				D869D73C28F7085A009B28F1 /* ScheduleView.swift */,
 				D81030AF28D227A70004983E /* ProfileEditor.swift */,
 				D8D9CD6D28D4BF5A00740645 /* FeatureCard.swift */,
 				D81030A828D2228A0004983E /* ProfileHost.swift */,
@@ -405,6 +408,7 @@
 				D81030AC28D2230C0004983E /* ProfileSummary.swift in Sources */,
 				D81030A928D2228A0004983E /* ProfileHost.swift in Sources */,
 				D864DE3828D0C67E002A06DE /* Hike.swift in Sources */,
+				D869D73D28F7085A009B28F1 /* ScheduleView.swift in Sources */,
 				D8DF303C28D8B0FF0042BE65 /* PageView.swift in Sources */,
 				D81030B028D227A70004983E /* ProfileEditor.swift in Sources */,
 				D84582D028C24752009805D1 /* LandmarkList.swift in Sources */,

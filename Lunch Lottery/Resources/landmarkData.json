@@ -7,7 +7,7 @@
         "id": 1000,
         "time": 1045,
         "isFeatured": true,
-        "isFavorite": true,
+        "isConfirmed": true,
         "park": "Slot 0-1",
         "coordinates": {
             "longitude": -116.166868,
@@ -24,7 +24,7 @@
         "id": 1001,
         "time": 1045,
         "isFeatured": true,
-        "isFavorite": true,
+        "isConfirmed": false,
         "park": "Slot 7-8",
         "coordinates": {
             "longitude": -116.166868,
@@ -41,7 +41,7 @@
         "id": 1002,
         "time": 1115,
         "isFeatured": false,
-        "isFavorite": false,
+        "isConfirmed": false,
         "park": "Slot 9-10",
         "coordinates": {
             "longitude": -152.665167,
@@ -58,7 +58,7 @@
         "id": 1003,
         "time": 1145,
         "isFeatured": false,
-        "isFavorite": true,
+        "isConfirmed": true,
         "park": "Slot 11-12",
         "coordinates": {
             "longitude": -135.334571,
@@ -75,7 +75,7 @@
         "id": 1004,
         "time": 1145,
         "isFeatured": false,
-        "isFavorite": true,
+        "isConfirmed": true,
         "park": "Slot 11-12",
         "coordinates": {
             "longitude": -135.334571,
@@ -92,7 +92,7 @@
         "id": 1005,
         "time": 1145,
         "isFeatured": false,
-        "isFavorite": true,
+        "isConfirmed": true,
         "park": "Slot 11-12",
         "coordinates": {
             "longitude": -135.334571,

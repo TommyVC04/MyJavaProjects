@@ -22,12 +22,13 @@ struct ProfileSummary: View {
                 Text("School / Organization: \(profile.school.rawValue == "Choose a School / Organization" ? "~": profile.school.rawValue)")
                 
                 Divider()
-                
                 VStack(alignment: .leading) {
                     Text("Scheduled Lotteries")
                         .font(.headline)
 
-                    HikeView(hike: modelData.hikes[0])
+                    ScheduleView()
+                    //HikeView(hike: modelData.hikes[0])
+                    
                 }
             }
         }
