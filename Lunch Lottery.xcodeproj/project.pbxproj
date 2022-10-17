@@ -37,6 +37,7 @@
 		D87C960128BD033E00DBD976 /* Lunch_LotteryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C960028BD033E00DBD976 /* Lunch_LotteryTests.swift */; };
 		D87C960B28BD033E00DBD976 /* Lunch_LotteryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C960A28BD033E00DBD976 /* Lunch_LotteryUITests.swift */; };
 		D87C960D28BD033E00DBD976 /* Lunch_LotteryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87C960C28BD033E00DBD976 /* Lunch_LotteryUITestsLaunchTests.swift */; };
+		D8B173C828FDA0DD00E832B5 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B173C728FDA0DD00E832B5 /* ButtonView.swift */; };
 		D8D8020028E49C3B00247142 /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D801FF28E49C3B00247142 /* CancelButton.swift */; };
 		D8D9CD6C28D4BD8200740645 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D9CD6B28D4BD8200740645 /* PageViewController.swift */; };
 		D8D9CD6E28D4BF5A00740645 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D9CD6D28D4BF5A00740645 /* FeatureCard.swift */; };
@@ -95,6 +96,7 @@
 		D87C960628BD033E00DBD976 /* Lunch LotteryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lunch LotteryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87C960A28BD033E00DBD976 /* Lunch_LotteryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lunch_LotteryUITests.swift; sourceTree = "<group>"; };
 		D87C960C28BD033E00DBD976 /* Lunch_LotteryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lunch_LotteryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D8B173C728FDA0DD00E832B5 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		D8D801FF28E49C3B00247142 /* CancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelButton.swift; sourceTree = "<group>"; };
 		D8D9CD6B28D4BD8200740645 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		D8D9CD6D28D4BF5A00740645 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				D81190E528BFA65300EB3308 /* CircleImage.swift */,
 				D8385A3728C8E4C7002866AF /* FavoriteButton.swift */,
 				D8D801FF28E49C3B00247142 /* CancelButton.swift */,
+				D8B173C728FDA0DD00E832B5 /* ButtonView.swift */,
 				D81190E728BFA7BB00EB3308 /* MapView.swift */,
 			);
 			path = Helpers;
@@ -396,6 +399,7 @@
 				D864DE4228D0CA26002A06DE /* GraphCapsule.swift in Sources */,
 				D864DE4728D0CF87002A06DE /* CategoryHome.swift in Sources */,
 				D8D9CD6E28D4BF5A00740645 /* FeatureCard.swift in Sources */,
+				D8B173C828FDA0DD00E832B5 /* ButtonView.swift in Sources */,
 				D87C95F228BD033B00DBD976 /* ContentView.swift in Sources */,
 				D81190E828BFA7BB00EB3308 /* MapView.swift in Sources */,
 				D87C95F028BD033B00DBD976 /* Lunch_LotteryApp.swift in Sources */,

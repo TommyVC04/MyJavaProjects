@@ -12,25 +12,15 @@ struct ProfileSummary: View {
     var profile: Profile
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 10) {
-                Text("Name: \(profile.username == "" ? "~": profile.username)")
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Name: \(profile.username == "" ? "~": profile.username)")
                     .bold()
                     .font(.title)
 
-                Text("Notifications: \(profile.prefersNotifications ? "On": "Off" )")
-                Text("School / Organization: \(profile.school.rawValue == "Choose a School / Organization" ? "~": profile.school.rawValue)")
-                
-                Divider()
-                VStack(alignment: .leading) {
-                    Text("Scheduled Lotteries")
-                        .font(.headline)
-
-                    ScheduleView()
-                    //HikeView(hike: modelData.hikes[0])
-                    
-                }
-            }
+            Text("Notifications: \(profile.prefersNotifications ? "On": "Off" )")
+            Text("School / Organization: \(profile.school.rawValue == "Choose a School / Organization" ? "~": profile.school.rawValue)")
+            
+            Divider()
         }
     }
 }

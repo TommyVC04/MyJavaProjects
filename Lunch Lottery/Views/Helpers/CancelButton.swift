@@ -12,11 +12,11 @@ struct CancelButton: View {
 
     var body: some View {
         Button (action: {isSet = true} ){
-            Text("Confirm")
+            Text("Cancel")
         }
         .padding()
-        .foregroundColor(.white)
-        .background(Color.blue)
+        .foregroundColor(.gray)
+        .background(Color(red: 211.0/255, green: 211.0/255, blue: 211.0/255))
         .clipShape(RoundedRectangle(cornerRadius: 5))
         .confirmationDialog("Are you sure?", isPresented: $isSet, titleVisibility: .visible) {
             Button("Yes", role: .destructive) {
