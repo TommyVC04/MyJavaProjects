@@ -1,13 +1,13 @@
 //
-//  CancelButton.swift
+//  FavoriteButton.swift
 //  Lunch Lottery
 //
-//  Created by TommyVC04 on 9/28/22.
+//  Created by TommyVC04 on 9/7/22.
 //
 
 import SwiftUI
 
-struct CancelButton: View {
+struct ConfirmButton: View {
     @Binding var isSet: Bool
     @State private var showSure = false
     @EnvironmentObject var modelData: ModelData
@@ -15,28 +15,29 @@ struct CancelButton: View {
 
     var body: some View {
         Button (action: {showSure = true} ){
-            Text("Cancel")
+            Text("Confirm")
         }
         .padding()
-        .foregroundColor(.gray)
-        .background(Color(red: 211.0/255, green: 211.0/255, blue: 211.0/255))
+        .foregroundColor(.white)
+        .background(Color.blue)
         .clipShape(RoundedRectangle(cornerRadius: 5))
         .confirmationDialog("Are you sure?", isPresented: $showSure, titleVisibility: .visible) {
             Button("Yes", role: .destructive) {
-                modelData.landmarks[landmarkIndex].isConfirmed.toggle()
+                isSet.toggle()
+                modelData.landmarks[landmarkIndex].isConfirmed = isSet
             }
             Button("Cancel", role: .cancel) {}
         }
     }
 }
 
-func removeConfirm() {
+func confirm() {
     //ENTER LOTTERY
 }
 
-struct CancelButton_Previews: PreviewProvider {
+struct ConfirmButton_Previews: PreviewProvider {
     static var previews: some View {
-        CancelButton(isSet: .constant(true), landmarkIndex: 0)
+        ConfirmButton(isSet: .constant(false), landmarkIndex: 0)
             .environmentObject(ModelData())
     }
 }
