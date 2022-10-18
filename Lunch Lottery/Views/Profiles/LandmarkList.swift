@@ -44,15 +44,6 @@ struct LandmarkList: View {
             
         }
     }
-    /*
-    func checkSchool () {
-        chosenOrg = modelData.profile.school.rawValue != "Choose a School / Organization"
-    }
-     
-     ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
-         CategoryRow(categoryName: key, items: modelData.categories[key]!)
-     }
-     */
     
     var schoolView: some View {
         NavigationView {
