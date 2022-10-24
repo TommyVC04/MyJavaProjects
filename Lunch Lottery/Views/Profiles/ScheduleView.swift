@@ -27,7 +27,7 @@ struct ScheduleView: View {
                     }
                 }
             }
-            .navigationTitle("Scheduled Lotteries")
+            .navigationTitle("Scheduled")
         }
     }
 }

@@ -9,10 +9,6 @@
         "isFeatured": true,
         "isConfirmed": true,
         "park": "Slot 0-1",
-        "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
-        },
         "description": "DELETE THIS LATER",
         "imageName": "turtlerock"
     },
@@ -26,10 +22,6 @@
         "isFeatured": true,
         "isConfirmed": false,
         "park": "Slot 7-8",
-        "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
-        },
         "description": "DELETE THIS LATER",
         "imageName": "lfhsImage"
     },
@@ -43,10 +35,6 @@
         "isFeatured": false,
         "isConfirmed": false,
         "park": "Slot 9-10",
-        "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
-        },
         "description": "DELETE THIS LATER",
         "imageName": "lfhsImage"
     },
@@ -60,10 +48,6 @@
         "isFeatured": false,
         "isConfirmed": true,
         "park": "Slot 11-12",
-        "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
-        },
         "description": "DELETE THIS LATER",
         "imageName": "lfhsImage"
     },
@@ -77,10 +61,6 @@
         "isFeatured": false,
         "isConfirmed": true,
         "park": "Slot 11-12",
-        "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
-        },
         "description": "DELETE THIS LATER",
         "imageName": "dpmImage"
     },
@@ -94,10 +74,6 @@
         "isFeatured": false,
         "isConfirmed": true,
         "park": "Slot 11-12",
-        "coordinates": {
-            "longitude": -135.334571,
-            "latitude": 59.560551
-        },
         "description": "DELETE THIS LATER",
         "imageName": "lbesImage"
     }
