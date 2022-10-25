@@ -14,13 +14,11 @@ struct LandmarkList: View {
     
     var body: some View {
         let chosenOrg = modelData.profile.school.rawValue != "Choose a School / Organization"
-        NavigationView {
-            if (chosenOrg) {
-                schoolView
-            }
-            else {
-                noOrgView
-            }
+        if (chosenOrg) {
+            schoolView
+        }
+        else {
+            noOrgView
         }
     }
     
@@ -29,6 +27,7 @@ struct LandmarkList: View {
             List {
                 Text("Edit Profile to Select School")
             }
+            .listStyle(.automatic)
             .navigationTitle("Lunch Lotteries")
             .toolbar {
                 Button {
@@ -57,6 +56,7 @@ struct LandmarkList: View {
                     }
                 }
             }
+            .listStyle(.automatic)
             .navigationTitle("Lunch Lotteries")
             .toolbar {
                 Button {

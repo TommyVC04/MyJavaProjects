@@ -11,6 +11,7 @@ import CoreLocation
 
 struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
+    var time: Int
     var name: String
     var park: String
     var state: String
@@ -25,6 +26,12 @@ struct Landmark: Hashable, Codable, Identifiable {
         case dpm = "Deerpath Middle School"
         case lbes = "Lake Bluff Elementary School"
     }
+    
+    var timeStr: String {
+        let first = String(time/100)
+        let second = String(time%100)
+        return first + ":" + second
+    }
 
     private var imageName: String
     var image: Image {
@@ -34,17 +41,4 @@ struct Landmark: Hashable, Codable, Identifiable {
     var featureImage: Image? {
         isFeatured ? Image(imageName + "_feature") : nil
     }
-/*
-    private var coordinates: Coordinates
-    var locationCoordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(
-            latitude: coordinates.latitude,
-            longitude: coordinates.longitude)
-    }
-
-    struct Coordinates: Hashable, Codable {
-        var latitude: Double
-        var longitude: Double
-    }
-*/
 }
