@@ -7,11 +7,80 @@
 
 import SwiftUI
 import UIKit
+import UserNotifications
 
 struct PageViewController<Page: View>: UIViewControllerRepresentable {
     var pages: [Page]
     @Binding var currentPage : Int
     
+    /*
+    //Notifications Block
+    class ViewController: UIViewController, UNUserNotificationCenterDelegate {
+    let userNotificationCenter = UNUserNotificationCenter.current()
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+
+            // Assing self delegate on userNotificationCenter
+            self.userNotificationCenter.delegate = self
+
+            self.requestNotificationAuthorization()
+            self.sendNotification()
+        }
+        
+        func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+            completionHandler()
+        }
+
+        func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+            completionHandler([.alert, .badge, .sound])
+        }
+    
+    func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
+        UIApplication.shared.applicationIconBadgeNumber = 0
+    }
+    
+    func sendNotification() {
+        let notificationContent = UNMutableNotificationContent()
+        notificationContent.title = "Test"
+        notificationContent.body = "Test body"
+        notificationContent.badge = NSNumber(value: 3)
+        
+        if let url = Bundle.main.url(forResource: "dune",
+                                    withExtension: "png") {
+            if let attachment = try? UNNotificationAttachment(identifier: "dune",
+                                                            url: url,
+                                                            options: nil) {
+                notificationContent.attachments = [attachment]
+            }
+        }
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5,
+                                                        repeats: false)
+        let request = UNNotificationRequest(identifier: "testNotification",
+                                            content: notificationContent,
+                                            trigger: trigger)
+        
+        userNotificationCenter.add(request) { (error) in
+            if let error = error {
+                print("Notification Error: ", error)
+            }
+        }
+    }
+    
+    func requestNotificationAuthorization() {
+        let authOptions = UNAuthorizationOptions.init(arrayLiteral: .alert, .badge, .sound)
+        
+        self.userNotificationCenter.requestAuthorization(options: authOptions) { (success, error) in
+            if let error = error {
+                print("Error: ", error)
+            }
+        }
+    }
+    }
+    //End Notifications
+    */
+     
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }

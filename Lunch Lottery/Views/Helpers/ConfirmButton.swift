@@ -9,13 +9,15 @@ import SwiftUI
 
 struct ConfirmButton: View {
     @Binding var isSet: Bool
-    @Binding var isName: Bool
+    @State private var isName = false
     @State private var showSure = false
     @EnvironmentObject var modelData: ModelData
     var landmarkIndex: Int
 
     var body: some View {
-        Button (action: {showSure = modelData.profile.username != ""} ){
+        Button (action: {showSure = modelData.profile.username != ""
+            isName = modelData.profile.username == ""
+        } ){
             Text("Confirm")
         }
         .padding()
@@ -29,9 +31,9 @@ struct ConfirmButton: View {
             }
             Button("Cancel", role: .cancel) {}
         }
-        /*.confirmationDialog("Please Edit Profile to Include your Name", isPresented: $showSure == false, titleVisibility: .visible) {
+        .confirmationDialog("Please Edit Profile to Include your Name", isPresented: $isName, titleVisibility: .visible) {
             Button("Ok", role: .cancel) {}
-        }*/
+        }
     }
 }
 

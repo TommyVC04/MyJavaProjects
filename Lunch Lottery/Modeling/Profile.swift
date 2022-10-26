@@ -11,7 +11,14 @@ struct Profile {
     var username: String
     var prefersNotifications = true
     var school = School.none
-    var goalDate = Date()
+    
+    var time: String {
+        let date = Date()
+        let calendar = Calendar.current
+        let hour = String(calendar.component(.hour, from: date))
+        let minutes = String(calendar.component(.minute, from: date))
+        return hour + ":" + minutes
+    }
 
     static let `default` = Profile(username: "")
 
