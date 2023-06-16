@@ -1,2 +1,2 @@
-# MyJavaProjects
-My Java projects from my summer course and extra things I did for school/fun
+# TVCode
+My coding projects I made for school and fun
