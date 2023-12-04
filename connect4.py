@@ -379,7 +379,8 @@ class Connect4Player:
 
 
 print('---- Welcome to Connect 4! ----')
-print('Made by Tommy, Janel, and Kevin')
+#print('Made by Tommy, Janel, and Kevin')
+print('Made for Math 214 Final Project')
 print('')
 print(' Player 1 -> X   Player 2 -> O ')
 print('')
